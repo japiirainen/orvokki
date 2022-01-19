@@ -1,0 +1,13 @@
+cradle:
+  cabal:
+    - path: "src"
+      component: "lib:orvokki"
+
+    - path: "app/Main.hs"
+      component: "orvokki:exe:orvokki"
+
+    - path: "app/Paths_orvokki.hs"
+      component: "orvokki:exe:orvokki"
+
+    - path: "tasty"
+      component: "orvokki:test:tasty"

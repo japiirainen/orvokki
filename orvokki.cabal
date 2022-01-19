@@ -1,0 +1,103 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.5.
+--
+-- see: https://github.com/sol/hpack
+
+name:           orvokki
+version:        0.0.1
+synopsis:       APL like calculator
+description:    See README at <https://github.com/japiirainen/orvokki#readme>
+category:       Development
+homepage:       https://github.com/japiirainen/orvokki#readme
+bug-reports:    https://github.com/japiirainen/orvokki/issues
+maintainer:     Joona Piirainen <joona.piirainen@gmail.com>
+build-type:     Simple
+extra-source-files:
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/japiirainen/orvokki
+
+library
+  exposed-modules:
+      Orvokki
+  other-modules:
+      Paths_orvokki
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+      ansi-wl-pprint
+    , base
+    , containers
+    , directory
+    , haskeline
+    , megaparsec
+    , mtl
+    , parsec
+    , pretty
+    , prettyprinter
+    , repline
+    , tasty
+    , tasty-hunit
+    , template-haskell
+    , text
+    , transformers
+  default-language: Haskell2010
+
+executable orvokki
+  main-is: Main.hs
+  other-modules:
+      Paths_orvokki
+  hs-source-dirs:
+      app
+  ghc-options: -Wall
+  build-depends:
+      ansi-wl-pprint
+    , base
+    , containers
+    , directory
+    , haskeline
+    , megaparsec
+    , mtl
+    , orvokki
+    , parsec
+    , pretty
+    , prettyprinter
+    , repline
+    , tasty
+    , tasty-hunit
+    , template-haskell
+    , text
+    , transformers
+  default-language: Haskell2010
+
+test-suite tasty
+  type: exitcode-stdio-1.0
+  main-is: Main.hs
+  other-modules:
+      Paths_orvokki
+  hs-source-dirs:
+      tasty
+  ghc-options: -Wall
+  build-depends:
+      ansi-wl-pprint
+    , base
+    , containers
+    , directory
+    , haskeline
+    , megaparsec
+    , mtl
+    , orvokki
+    , parsec
+    , pretty
+    , prettyprinter
+    , repline
+    , tasty
+    , tasty-hunit
+    , template-haskell
+    , text
+    , transformers
+  default-language: Haskell2010

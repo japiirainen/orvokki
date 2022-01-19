@@ -1,0 +1,63 @@
+name: orvokki
+version: 0.0.1
+synopsis: APL like calculator
+description: See README at <https://github.com/japiirainen/orvokki#readme>
+maintainer: Joona Piirainen <joona.piirainen@gmail.com>
+github: japiirainen/orvokki
+category: Development
+extra-source-files:
+  - CHANGELOG.md
+
+ghc-options: -Wall
+
+dependencies:
+  - base
+  - parsec
+  - megaparsec
+  - mtl
+  - template-haskell
+  - ansi-wl-pprint
+  - tasty
+  - tasty-hunit
+  - prettyprinter
+  - transformers
+  - haskeline
+  - containers
+  - pretty
+  - text
+  - repline
+  - directory
+
+library:
+  source-dirs: src
+  exposed-modules:
+    - Orvokki
+
+executable:
+  main: Main.hs
+  source-dirs: app
+  dependencies:
+    - orvokki
+
+tests:
+  tasty:
+    main: Main.hs
+    source-dirs: tasty
+
+    dependencies:
+      - base
+      - orvokki
+      - parsec
+      - megaparsec
+      - mtl
+      - template-haskell
+      - ansi-wl-pprint
+      - tasty
+      - tasty-hunit
+      - prettyprinter
+      - transformers
+      - haskeline
+      - containers
+      - pretty
+      - text
+      - repline
