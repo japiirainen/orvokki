@@ -43,6 +43,14 @@ library:
   source-dirs: src
   exposed-modules:
     - Orvokki
+    - Orvokki.Location
+    - Orvokki.Lexer
+    - Orvokki.Parser
+    - Orvokki.REPL
+    - Orvokki.Pretty
+    - Orvokki.Syntax
+    - Orvokki.Input
+
 
 executable:
   main: Main.hs

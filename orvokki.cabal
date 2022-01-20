@@ -23,6 +23,13 @@ source-repository head
 library
   exposed-modules:
       Orvokki
+      Orvokki.Location
+      Orvokki.Lexer
+      Orvokki.Parser
+      Orvokki.REPL
+      Orvokki.Pretty
+      Orvokki.Syntax
+      Orvokki.Input
   other-modules:
       Paths_orvokki
   hs-source-dirs:
