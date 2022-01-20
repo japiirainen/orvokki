@@ -11,22 +11,33 @@ extra-source-files:
 ghc-options: -Wall
 
 dependencies:
-  - base
-  - parsec
-  - megaparsec
-  - mtl
-  - template-haskell
-  - ansi-wl-pprint
-  - tasty
-  - tasty-hunit
-  - prettyprinter
-  - transformers
-  - haskeline
-  - containers
-  - pretty
-  - text
-  - repline
-  - directory
+    - base
+    - Earley
+    - ansi-terminal
+    - containers
+    - filepath
+    - generic-lens
+    - haskeline
+    - http-client
+    - http-client-tls
+    - http-types
+    - insert-ordered-containers
+    - lens
+    - megaparsec
+    - modern-uri
+    - mtl
+    - optparse-applicative
+    - parser-combinators
+    - prettyprinter
+    - prettyprinter-ansi-terminal
+    - repline
+    - safe-exceptions
+    - scientific
+    - string-interpolate
+    - template-haskell
+    - terminal-size
+    - text
+    - unordered-containers
 
 library:
   source-dirs: src

@@ -29,22 +29,33 @@ library
       src
   ghc-options: -Wall
   build-depends:
-      ansi-wl-pprint
+      Earley
+    , ansi-terminal
     , base
     , containers
-    , directory
+    , filepath
+    , generic-lens
     , haskeline
+    , http-client
+    , http-client-tls
+    , http-types
+    , insert-ordered-containers
+    , lens
     , megaparsec
+    , modern-uri
     , mtl
-    , parsec
-    , pretty
+    , optparse-applicative
+    , parser-combinators
     , prettyprinter
+    , prettyprinter-ansi-terminal
     , repline
-    , tasty
-    , tasty-hunit
+    , safe-exceptions
+    , scientific
+    , string-interpolate
     , template-haskell
+    , terminal-size
     , text
-    , transformers
+    , unordered-containers
   default-language: Haskell2010
 
 executable orvokki
@@ -55,23 +66,34 @@ executable orvokki
       app
   ghc-options: -Wall
   build-depends:
-      ansi-wl-pprint
+      Earley
+    , ansi-terminal
     , base
     , containers
-    , directory
+    , filepath
+    , generic-lens
     , haskeline
+    , http-client
+    , http-client-tls
+    , http-types
+    , insert-ordered-containers
+    , lens
     , megaparsec
+    , modern-uri
     , mtl
+    , optparse-applicative
     , orvokki
-    , parsec
-    , pretty
+    , parser-combinators
     , prettyprinter
+    , prettyprinter-ansi-terminal
     , repline
-    , tasty
-    , tasty-hunit
+    , safe-exceptions
+    , scientific
+    , string-interpolate
     , template-haskell
+    , terminal-size
     , text
-    , transformers
+    , unordered-containers
   default-language: Haskell2010
 
 test-suite tasty
@@ -83,21 +105,38 @@ test-suite tasty
       tasty
   ghc-options: -Wall
   build-depends:
-      ansi-wl-pprint
+      Earley
+    , ansi-terminal
+    , ansi-wl-pprint
     , base
     , containers
-    , directory
+    , filepath
+    , generic-lens
     , haskeline
+    , http-client
+    , http-client-tls
+    , http-types
+    , insert-ordered-containers
+    , lens
     , megaparsec
+    , modern-uri
     , mtl
+    , optparse-applicative
     , orvokki
     , parsec
+    , parser-combinators
     , pretty
     , prettyprinter
+    , prettyprinter-ansi-terminal
     , repline
+    , safe-exceptions
+    , scientific
+    , string-interpolate
     , tasty
     , tasty-hunit
     , template-haskell
+    , terminal-size
     , text
     , transformers
+    , unordered-containers
   default-language: Haskell2010
